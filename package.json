@@ -1,0 +1,19 @@
+{
+  "name": "desafio-ew",
+  "version": "1.0.0",
+  "description": "Project to prove my learning in the course of Node.js by Erick Wendel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyukio/desafio-ew.git"
+  },
+  "author": "Lyukio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyukio/desafio-ew/issues"
+  },
+  "homepage": "https://github.com/lyukio/desafio-ew#readme"
+}

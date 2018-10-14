@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lyukio/desafio-ew/issues"
   },
-  "homepage": "https://github.com/lyukio/desafio-ew#readme"
+  "homepage": "https://github.com/lyukio/desafio-ew#readme",
+  "dependencies": {
+    "hapi": "16.6.3"
+  }
 }

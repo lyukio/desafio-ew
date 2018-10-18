@@ -1,21 +1,20 @@
 const Hapi = require('hapi')
-const app = new Hapi.Server()
-app.connection({ port: 4000 })
+const server = new Hapi.Server()
+server.connection({ port: 4000 })
 
-async function run(app) {
-    app.route([
-        {
-            path:'/teste',
-            method:'GET',
-            handler: async (request, reply) => {
-                console.log('rota funcionando')
-                return reply('rota funcionando')
-            }
-        }
-    ])
+const fs = require("fs");
+const path = require("path");
 
-    await app.start()
+(async function run(server) {
+
+    const routesPath = path.join(__dirname, 'src/routes');
+
+    fs.readdirSync(routesPath).forEach((file) => {
+        const routes = require(routesPath + "/" + file);
+        routes.forEach(route => server.route(route));
+    
+    });
+
+    await server.start()
     console.log(`API rodando!!`)
-}
-
-run(app)
+})(server)

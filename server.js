@@ -12,7 +12,6 @@ const path = require("path");
     fs.readdirSync(routesPath).forEach((file) => {
         const routes = require(routesPath + "/" + file);
         routes.forEach(route => server.route(route));
-    
     });
 
     await server.start()

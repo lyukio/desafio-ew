@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/lyukio/desafio-ew#readme",
   "dependencies": {
-    "hapi": "16.6.3"
+    "hapi": "16.6.3",
+    "mongoose": "^5.3.4"
   }
 }

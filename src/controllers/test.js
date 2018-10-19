@@ -1,11 +1,12 @@
-const HelloWorld = require("../models/helloWorld");
+const HelloWorld = require("../models/helloWorld")
+const asa = "aa"
 class TesteRouterController {
     async get(request, reply) {
-        console.log('rota funcionando');
+        console.log('rota funcionando')
         return reply(new HelloWorld().concat());
     }
     async post(request, reply) {
-        return reply("OK");
+        return reply("OK")
     }
 }
 

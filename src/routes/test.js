@@ -1,13 +1,13 @@
-const testeRouter = require("../controllers/test");
+const testeController = require("../controllers/test");
 module.exports = [
     {
         path:'/teste',
         method:'GET',
-        handler: testeRouter.get.bind(testeRouter)
+        handler: testeController.get.bind(testeController)
     },
     {
         path: '/teste',
         method: 'POST',
-        handler: testeRouter.post.bind(testeRouter)
+        handler: testeController.post.bind(testeController)
     }
 ]

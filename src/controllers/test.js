@@ -1,5 +1,4 @@
 const HelloWorld = require("../models/helloWorld")
-const asa = "aa"
 class TesteRouterController {
     async get(request, reply) {
         console.log('rota funcionando')

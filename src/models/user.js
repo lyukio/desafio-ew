@@ -16,7 +16,7 @@ const UserSchema = new Mongoose.Schema({
 });
 
 class User {
-
+    // public fields: Schema 
 }
 
 

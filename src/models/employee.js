@@ -1,14 +1,15 @@
 const Mongoose = require("mongoose");
+const Schema = Mongoose.Schema;
 
-const UserSchema = new Mongoose.Schema({
+const EmployeeSchema = new Schema({
     email: {
         type: String,
         required: [true, 'Email field is required'],
         unique: true
     },
-    password: {
-        type: String,
-        required: [true, 'Password field is required']
+    user: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
     },
     createdAt: {
         type: Date,
@@ -16,4 +17,4 @@ const UserSchema = new Mongoose.Schema({
     }
 });
 
-module.exports = Mongoose.model("user", UserSchema);
+module.exports = Mongoose.model("employee", EmployeeSchema);

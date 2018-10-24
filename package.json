@@ -4,6 +4,7 @@
   "description": "Project to prove my learning in the course of Node.js by Erick Wendel",
   "main": "index.js",
   "scripts": {
+    "deploy": "SET NODE_ENV=dev && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,7 +18,8 @@
   },
   "homepage": "https://github.com/lyukio/desafio-ew#readme",
   "dependencies": {
+    "dotenv": "^6.1.0",
     "hapi": "16.6.3",
-    "mongoose": "^5.3.4"
+    "mongoose": "^5.3.5"
   }
 }

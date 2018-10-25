@@ -1,13 +1,15 @@
 const User = require("../models/user")
 class UserController {
     async get(request, reply) {
-        console.log('rota funcionando')
-        return reply(new User({
-            email: 'lyukio'
-        }));
+        let user = await User.find({})
+        return reply("ok");
     }
     async post(request, reply) {
-        return reply("OK")
+        let user = await User.create({
+            email: 'lyukio',
+            password: 'sads',
+        })
+        return reply(user)
     }
 }
 
